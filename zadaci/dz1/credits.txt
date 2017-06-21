@@ -1,0 +1,58 @@
+CREDITS
+
+Twitter Bootstrap
+http://twitter.github.com/bootstrap/
+Copyright 2012 Twitter, Inc.
+License:  Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+Foundation Icon Fonts
+http://www.zurb.com/playground/foundation-icons
+MIT license
+Copyright (c) 2012 ZURB, http://www.zurb.com/
+
+Camera slideshow v1.0.10
+http://www.pixedelic.com/plugins/camera/
+MIT license
+Copyright (c) 2012 by Manuel Masia - www.pixedelic.com
+
+jQuery Wookmark plugin 0.5
+http://www.wookmark.com/jquery-plugin/
+Copyright (c) 2009-2012 Christoph Ono (www.wookmark.com)
+Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license.
+
+jquery.yoxview
+http://yoxigen.com/yoxview
+Copyright (c) 2010 Yossi Kolesnicov
+MIT License
+
+Vegas - jQuery plugin 
+Add awesome fullscreen backgrounds to your webpages.
+v 1.x
+Dual licensed under the MIT and GPL licenses.
+http://vegas.jaysalvat.com/
+Copyright (C) 2011 Jay Salvat
+http://jaysalvat.com/
+
+jQuery Easing v1.3
+http://gsgd.co.uk/sandbox/jquery/easing/
+Open source under the BSD License.
+Copyright © 2008 George McGinley Smith All rights reserved.
+
+Subtle Patterns
+Collection of high quality design patterns
+http://subtlepatterns.com/
+This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+
+DuckFiles - Free Resources for Web Designers
+http://duckfiles.com
+License: http://duckfiles.com/licensing/
+
+PhotoDune
+http://photodune.net/
+(Extended Licence)
+
+Best PSD Freebies
+The ultimate place to get free PSD design resources handcrafted by Michael Reimer
+http://www.bestpsdfreebies.com
+

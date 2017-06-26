@@ -1,0 +1,15 @@
+body {
+	 font-family: 'Source Sans Pro', sans-serif;
+}
+
+.row{
+	max-width: 100%;
+}
+.menu > li > a {
+	padding: 0 em 2 em ;
+}
+
+.top-bar {
+     padding: 0 em;
+     margin-bottom: 1 em ;
+}

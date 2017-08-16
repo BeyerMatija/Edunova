@@ -1,0 +1,8 @@
+
+
+
+// OVDJE TREBA PROMIJENITI -U -P ZA SQL BAZI LJEKARNA!!
+
+cd c:\xampp\mysql\bin
+
+mysql -uedunova -pedunova --default_character_set=utf8 < "C:\xampp\htdocs\Edunova8\skriptawp15.sql"

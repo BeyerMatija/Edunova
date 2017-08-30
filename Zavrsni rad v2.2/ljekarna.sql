@@ -87,10 +87,10 @@ insert into korisnik (oib,ime,prezime) values (54578545201,'Ivan','Rajšić');
 
 // OPERATERI //
 
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (1, 'mb', 'md5:1234', 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (2, 'ip', 'md5:1234', 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (3, 'db', 'md5:1234', 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (4, 'rb', 'md5:1234', 1);
+insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (1, 'mb', md5('1234'), 1);
+insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (2, 'ip', md5('1234'), 1);
+insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (3, 'db', md5('1234'), 1);
+insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (4, 'rb', md5('1234'), 1);
 
 // LIJEKOVI //
 
@@ -217,7 +217,3 @@ insert into podignuto (posjeta,lijek,kolicina) values (38,38,2.0);
 insert into podignuto (posjeta,lijek,kolicina) values (39,45,1.0);
 insert into podignuto (posjeta,lijek,kolicina) values (40,46,3.0);
 insert into podignuto (posjeta,lijek,kolicina) values (41,47,0.2);
-
-
-
-

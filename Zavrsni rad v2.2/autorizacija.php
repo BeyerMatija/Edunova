@@ -2,14 +2,15 @@
 
 include_once 'konfiguracija.php';
 
-if (!isset ($_POST ["korisnik"]) || !isset ($_POST ["korisnik"])) {
+if (!isset ($_POST ["korisnicko_ime"])) {
 	header ("location: " . $putanjaAPP . "index.php");	
 }
+
 //upit
 
-$izraz=$veza->prepare ("select * from operater where email=:email and lozinka=md5(:lozinka)");
+$izraz=$veza->prepare ("select * from operater where korisnicko_ime=:korisnicko_ime and lozinka=md5(:lozinka)");
 
-$izraz->execute (array ("email"=>$_POST["korisnik"], "lozinka"=>$_POST ["lozinka"]));
+$izraz->execute (array ("korisnicko_ime"=>$_POST["korisnicko_ime"], "lozinka"=>$_POST ["lozinka"]));
 
 //operateri 
 

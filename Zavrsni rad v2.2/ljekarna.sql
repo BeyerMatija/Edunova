@@ -1,3 +1,5 @@
+-- za dizanje na byethost zakomentirati prva 3 reda --
+
 
 drop database if exists ljekarna;
 create database ljekarna default character set utf8;
@@ -192,3 +194,8 @@ insert into podignuto (posjeta,lijek,kolicina) values (15,17,2.2);
 insert into podignuto (posjeta,lijek,kolicina) values (16,18,2.0);
 insert into podignuto (posjeta,lijek,kolicina) values (17,19,2.0);
 insert into podignuto (posjeta,lijek,kolicina) values (18,20,1.0);
+
+
+
+
+

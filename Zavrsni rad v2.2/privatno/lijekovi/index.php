@@ -36,8 +36,8 @@
 		<tr>
 			<td><?php echo $lijek->naziv; ?></td>
 			<td><?php echo $lijek->cijena; ?></td>
-			<td><a href="<?php echo $putanjaAPP. "privatno/lijekovi/delete.php?sifra=".$lijek->sifra?>">OBRIŠI</a></td>
-			<td><a href="<?php echo $putanjaAPP. "privatno/lijekovi/uredi.php?sifra=".$lijek->sifra?>">UREDI</a></td>
+			<td><a href="<?php echo $putanjaAPP. "privatno/lijekovi/delete.php?sifra=".$lijek->sifra?>"><i title="Obriši" class="step fi-page-delete size-48"></i></a></td>
+			<td><a href="<?php echo $putanjaAPP. "privatno/lijekovi/uredi.php?sifra=".$lijek->sifra?>"><i title="Uredi" class="step fi-page-edit size-48"></i></a></td>
 			
 		</tr>
 			    <?php endforeach; ?>

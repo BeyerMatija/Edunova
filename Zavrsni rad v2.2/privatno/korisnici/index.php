@@ -7,10 +7,11 @@
   <body>
   	<?php include_once '../../predlosci/menu.php'; ?>
   	<div class="row">
+  		
   		<div class="large-12">
   			  			<a href="<?php echo $putanjaAPP. "privatno/korisnici/unesi.php";?>"><button class="success button">Unesi novi</button></a>
-
   			</div>
+  			
   	</div>
   	    <table>
 						<thead>
@@ -18,7 +19,8 @@
 								<th>Ime</th>
 								<th>Prezime</th>
 								<th>OIB</th>
-								
+								<th>Obriši</th>
+								<th>Uredi</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -35,8 +37,8 @@
 								<td><?php echo $korisnik->prezime ?></td>
 								<td><?php echo $korisnik->oib ?></td>
 								
-								<td><a href="<?php echo $putanjaAPP. "privatno/korisnici/delete.php?sifra=".$korisnik->sifra?>">OBRIŠI</a></td>
-								<td><a href="<?php echo $putanjaAPP. "privatno/korisnici/uredi.php?sifra=".$korisnik->sifra?>">UREDI</a></td>
+								<td><a href="<?php echo $putanjaAPP. "privatno/korisnici/delete.php?sifra=".$korisnik->sifra?>"><i title="Obriši" class="fi-page-delete size-48"></i></a></td>
+								<td><a href="<?php echo $putanjaAPP. "privatno/korisnici/uredi.php?sifra=".$korisnik->sifra?>"><i title="Uredi" class="step fi-page-edit size-48"></i></a></td>
 								
 							</tr>
 							<?php endforeach; ?>

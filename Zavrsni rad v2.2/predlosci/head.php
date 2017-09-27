@@ -4,12 +4,12 @@
     <link rel="icon" href="/Zavrsni rad/img/favicon/favicon.ico" type="image/x-icon">
     <meta property="og:site_name" content="<?php echo $naslovAplikacije;  ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="http://www.websightdesign.com/images/WebSight_Design_Logo.jpg" />
+	<meta property="og:image" content="Zavrsni rad" />
 	<meta name="twitter:card" content="summary" />
-	
-		
+	<meta name="twitter:description" content="Aplikacija za upravljanje ljekarnom" />
+	<meta name="twitter:title" content="<?php echo $naslovAplikacije;  ?>" /> 	
       			
-	<link rel="icon" href="/Zavrsni rad v1.0/img/favicon/favicon.ico" type="image/x-icon">   
+	<link rel="icon" href="/Zavrsni rad v2.5/img/favicon/favicon.ico" type="image/x-icon">   
 
     	
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -32,6 +32,8 @@
 
 	
     <title><?php echo $naslovAplikacije; ?></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $putanjaAPP;?>css/foundation.css">
+    <link rel="stylesheet" href="<?php echo $putanjaAPP;  ?>css/FI/foundation-icons.css">
     <link rel="stylesheet" href="<?php echo $putanjaAPP;?>css/app.css">
    

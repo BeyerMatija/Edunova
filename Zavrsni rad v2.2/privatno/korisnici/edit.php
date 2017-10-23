@@ -1,5 +1,6 @@
 <?php
 include_once '../../konfiguracija.php';
+include_once '../../funkcije.php'; provjeralogin(); 
 //uzimamo podatke iz post metode i kreiramo upit
 $izraz= $veza->prepare("update korisnik set ime=:ime,prezime=:prezime,oib=:oib where sifra=:sifra");
 //nakon sto smo pripremili upit izvršimo ga s nasim parametrima

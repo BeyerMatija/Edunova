@@ -1,4 +1,5 @@
  <?php include_once '../../konfiguracija.php';  ?>
+ <?php include_once '../../funkcije.php'; provjeralogin(); ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -17,18 +18,30 @@
 							$korisnik = $izraz->fetch(PDO::FETCH_OBJ);
 							      
 							       ?>
+							       
+		<div class ="grid-x">
+  		<div class="medium-3 large-3 cell"></div>
+  		<div class="medium-6 large-6 cell">
+  								     
 	    <form class="log-in-form" method="post" action="<?php echo $putanjaAPP;?>privatno/korisnici/edit.php">
 			  	
-			  <h4 class="text-center">Uredi informacije o korisniku</h4>
-			  <label>Ime
-			    <input type="text" name="Ime" placeholder="Ime" value="<?php echo $korisnik->ime; ?>">
+			  <h4 class="text-center"><b>Uredi informacije o korisniku</b></h4>
+			  <label>Ime:
+			    <input type="text" name="ime" placeholder="ime" value="<?php echo $korisnik->ime; ?>">
 			  </label>
-			  <label>Prezime
-			    <input type="text" name="Prezime" placeholder="Prezime" value="<?php echo $korisnik->prezime; ?>">
+			  <label>Prezime:
+			    <input type="text" name="prezime" placeholder="prezime" value="<?php echo $korisnik->prezime; ?>">
 			  </label>
-			  <label>OIB
-		       <input type="number" name="OIB"  placeholder="OIB" value="<?php echo $korisnik->oib; ?>">
+			  <label>OIB:
+		       <input type="number" name="oib"  placeholder="oib" value="<?php echo $korisnik->oib; ?>">
+		       
+		       <input type="hidden" name="sifra"  value="<?php echo $korisnik->sifra; ?>">
 			  <p><input type="submit" class="button expanded" value="Uredi"></input></p>
+			  
+			   <a href="<?php echo $putanjaAPP;?>privatno/korisnici/index.php"">
+			  <button class="alert button expanded" name="odustani">Odustani</button>
+				</a>
+
 		
 			</form>
 	<?php	include_once '../../predlosci/podnozje.php'; ?>

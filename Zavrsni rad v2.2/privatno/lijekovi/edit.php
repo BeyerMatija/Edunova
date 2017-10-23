@@ -1,5 +1,6 @@
 <?php
 include_once '../../konfiguracija.php';
+include_once '../../funkcije.php'; provjeralogin();
 //uzimamo podatke iz post metode i kreiramo upit
 $izraz= $veza->prepare("update lijek set naziv=:naziv, cijena=:cijena where sifra=:sifra");
 //nakon sto smo pripremili upi izvršimo ga s nasim parametrima

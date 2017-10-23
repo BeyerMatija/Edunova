@@ -1,5 +1,6 @@
 <?php
 include_once '../../konfiguracija.php';
+include_once '../../funkcije.php'; provjeralogin(); 
 //uzimamo podatke iz post metode i kreiramo upit
 $izraz= $veza->prepare("insert into korisnik (ime, prezime, oib) values(:ime, :prezime, :oib)");
 //nakon sto smo pripremili upit izvršimo ga s nasim parametrima

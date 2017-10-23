@@ -5,11 +5,11 @@ session_start();
 include_once 'funkcije.php';
 
 
-$naslovAplikacije = "Ljekarna Beyer v2.5";
+$naslovAplikacije = "Ljekarna Beyer";
 
 switch ($_SERVER["HTTP_HOST"] ) {
 	case 'localhost':
-			$putanjaAPP="/Zavrsni rad v2.5/";
+			$putanjaAPP="/Zavrsni rad beta/";
 			$mysqlHost='localhost';
 			$mysqlBaza="ljekarna";
 			$mysqlKorisnik="root";
@@ -17,7 +17,7 @@ switch ($_SERVER["HTTP_HOST"] ) {
 		break;
 		
 	case 'matijab.byethost12.com':
-			$putanjaAPP="/Zavrsni-rad-v2.5/";
+			$putanjaAPP="/Zavrsni_rad_beta/";
 			$mysqlHost="sql303.byethost12.com";
 			$mysqlBaza="b12_20152931_ljekarna";
 			$mysqlKorisnik="b12_20152931";

@@ -1,5 +1,6 @@
 <?php
 include_once '../../konfiguracija.php';
+include_once '../../funkcije.php'; provjeralogin();
 //uzimamo šifru odabranog lijeka yza brisanje koju smo dobili iz url-a pomoću get metode
 $sifra = $_GET['sifra'];
 //ovdje napraviti provjeru koristi li se taj lijek negdje(racun, posjeta..) ako da,nemozes obrisati ako ne brisi (select * from posjeta where lijek=:sifra) ...onda ide execute ...i ako postoji tj koristi se nemoj brisati

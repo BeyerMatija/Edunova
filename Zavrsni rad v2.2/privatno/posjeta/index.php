@@ -17,7 +17,7 @@
 								<th>Datum</th>
 								<th>Korisnik</th>
 								<th>Operater</th>
-								<th>Akcija</th>
+								<th>Detalji</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -40,12 +40,13 @@
 							foreach ($posjete as $posjeta) :
 							?>
 							<tr>
-								<td><?php echo $posjeta->datum; ?></td>
+								<td><?php echo date("d.m.Y. G:i:s",strtotime($posjeta->datum)); ?></td>
 								<td><?php echo $posjeta->ime ." ". $posjeta->prezime; ?></td>
 								<td><?php echo $posjeta->korisnicko_ime;?></td>
 								<td>
 									
-									<a href="<?php echo $putanjaAPP. "privatno/posjeta/detalji.php?sifra=".$posjeta->sifra?>"><i title="Detalji" class="step fi-eye size-48"></i></a>
+									<a href="<?php echo $putanjaAPP. "privatno/posjeta/detalji.php?sifra=".$posjeta->sifra?>">
+										<i title="Detalji" class="fi-eye size-60" style="font-size: 1.2rem"></i></a>
 							   </td>
 							</tr>
 							<?php endforeach; ?>
@@ -54,7 +55,7 @@
        </div>
   		<div class="small-12 medium-3 large-3 columns"> 
   			<a href="<?php echo $putanjaAPP. "privatno/posjeta/unesi.php";?>">
-  				<button class="success button expanded" style="float: right; width:80%;background: #14679e; color:white; margin-right: 25px;">Unesi novu</button></a>
+  				<button class="success button expanded" style="float: right; width:80%;background: #14679e; color:white; margin-right: 25px;">Unesi novu posjetu</button></a>
   		</div>
   	</div>   
 	<?php	include_once '../../predlosci/podnozje.php'; ?>

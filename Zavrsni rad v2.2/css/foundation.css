@@ -5,7 +5,7 @@ session_start();
 include_once 'funkcije.php';
 
 
-$naslovAplikacije = "Ljekarna Beyer v2.2";
+$naslovAplikacije = "Ljekarna Beyer";
 
 
 @charset "UTF-8";

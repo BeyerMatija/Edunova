@@ -1,15 +1,15 @@
 	<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Zavrsni rad/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/Zavrsni rad beta/img/favicon/favicon.ico" type="image/x-icon">
     <meta property="og:site_name" content="<?php echo $naslovAplikacije;  ?>" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="Zavrsni rad" />
+	<meta property="og:image" content="Zavrsni_rad_beta" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:description" content="Aplikacija za upravljanje ljekarnom" />
 	<meta name="twitter:title" content="<?php echo $naslovAplikacije;  ?>" /> 	
       			
-	<link rel="icon" href="/Zavrsni rad v2.5/img/favicon/favicon.ico" type="image/x-icon">   
+	<link rel="icon" href="/Zavrsni_rad_beta/img/favicon/favicon.ico" type="image/x-icon">   
 
     	
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

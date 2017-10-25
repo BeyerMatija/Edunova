@@ -1,9 +1,10 @@
+
 -- za dizanje na byethost zakomentirati prva 3 reda --
 
 
-drop database if exists ljekarna;
-create database ljekarna default character set utf8;
-use ljekarna;
+-- drop database if exists ljekarna; 
+-- create database ljekarna default character set utf8;
+-- use ljekarna; 
 
 
 create table korisnik(
@@ -11,6 +12,7 @@ sifra   int not null primary key auto_increment,
 oib     char(11) not null,
 ime     varchar(50) not null,
 prezime varchar(50) not null
+
 );
 
 create table operater(
@@ -18,7 +20,7 @@ sifra  int not null primary key auto_increment,
 korisnik int not null,
 korisnicko_ime varchar(50) not null,
 lozinka varchar(50) not null,
-ljekarna int not null
+isAdmin boolean not null
 );
 
 create table posjeta(
@@ -35,6 +37,7 @@ cijena decimal(18,2) default 0
 );
 
 create table podignuto(
+sifra  int not null primary key auto_increment,
 posjeta int not null,
 lijek int not null,
 kolicina decimal(18,3) not null
@@ -86,10 +89,10 @@ insert into korisnik (oib,ime,prezime) values (54578545201,'Ivan','Rajšić');
 
 -- OPERATERI --
 
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (1, 'mb', md5('1234'), 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (2, 'ip', md5('1234'), 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (3, 'db', md5('1234'), 1);
-insert into operater (korisnik, korisnicko_ime, lozinka,ljekarna) values (4, 'rb', md5('1234'), 1);
+insert into operater (korisnik, korisnicko_ime, lozinka, isAdmin) values (1, 'mb', md5('1234'), 1);
+insert into operater (korisnik, korisnicko_ime, lozinka, isAdmin) values (2, 'ip', md5('1234'),0);
+insert into operater (korisnik, korisnicko_ime, lozinka, isAdmin) values (3, 'db', md5('1234'),0);
+insert into operater (korisnik, korisnicko_ime, lozinka, isAdmin) values (4, 'rb', md5('1234'),0);
 
 -- LIJEKOVI --
 

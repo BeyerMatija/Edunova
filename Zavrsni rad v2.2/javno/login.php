@@ -12,12 +12,19 @@
   		<div class="medium-3 large-3 cell"></div>
   		<div class="medium-6 large-6 cell">
   			
-  			<!-- <?php
-             if(isset($_GET["nemateOvlasti"])){
-                echo "<h1>Nemate ovlasti</h1>";
+  			<?php
+  			
+             if(isset($_GET["nemateOvlast"])){
+                echo "<h5 style=\"color: #660033\">Morate se logirati za nastavak!</h5>";
             }
-           ?> -->
-  				  	        	
+			 
+			/* if(isset($_GET["neuspio"])){
+			    echo "Ne ispravna kombinacija korisnika i lozinke!";
+			}
+			 */
+			 
+           ?> 
+  	  	   	
 			  <form class="log-in-form" method="post" action="<?php echo $putanjaAPP;?>javno/dologin.php">
 			  	<?php 
 			  	if(isset($_GET['error']) && $_GET['error'] == 'true')				
@@ -41,8 +48,8 @@
 			   <a href="<?php echo $putanjaAPP;?>index.php">
 			  <button class="alert button expanded" name="odustani">Odustani</button>
 				</a>
-    	
-         </div>
+    	     </div> 
+        
     </div>
  </div>
 	<?php	include_once '../predlosci/podnozje.php'; ?>

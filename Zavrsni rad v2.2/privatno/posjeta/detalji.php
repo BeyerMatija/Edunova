@@ -7,6 +7,11 @@
   </head>
   <body>
   	<?php include_once '../../predlosci/menu.php'; ?>
+  	
+  	<div class ="grid-x">
+  		<div class="medium-3 large-3 cell"></div>
+  		<div class="medium-6 large-6 cell">	
+  	
 							<?php 
 							$ukupno=0;
 							//opet imamo parametar iz url-a
@@ -42,33 +47,31 @@
 							//rezultat koji dobijemo spremamo u našu varijabliu $lijek
 							$detalji = $izraz2->fetch(PDO::FETCH_OBJ);				   
 							       ?>
-	   <div class ="grid-x">
-	   		<div class="medium-8 cell">
-	   
-  		
-  				
-	    			<h4> <?php echo $detalji->datum; ?> </h4>
+				     <h4 class="text-center"><b>Detalji posjete</b></h4>
+	  
+	    			<h5><td><b><?php echo date("d.m.Y G:i:s",strtotime($detalji->datum)); ?></b></td></h5>
+	    			
 	    		<div class="row grid-x">
 	    			
-	    			<div><b>Korisnik: </b></div>
-	    			<div style="color: #a53b2a"><b><?php echo $detalji->ime. " ". $detalji->prezime;?></b></div>
+  					<div class="medium-6 large-6 cell">
+	    			<div class>Korisnik:<b style="color: #a53b2a"><?php echo $detalji->ime. " ". $detalji->prezime;?></b>
+	    			<div>Operater:<b><?php echo $detalji->korisnicko_ime;?></b></div>
+	    		</div>    
 	    		</div>
 	    		
-	    		<div class="row grid-x">
-	    			<div><b>Operater:</b></div>
-	    			<div><?php echo $detalji->korisnicko_ime;?> </div>
-	    		<div class="large-12 medium-6 cell"> 
+	    		
 	    			
 	    		
+  					
+	    		<div class="large-12 medium-12 cell"> 
 	    	 <table>
 					<thead>
 							<tr>
-									
 								<th>Naziv</th>
 								<th>Cijena</th>
 								<th>Količina</th>
 								<th>Ukupna cijena</th>
-								<th>Obriši</th>
+								<th>Akcija</th>
 							</tr>
 					</thead>
 			<tbody>
@@ -98,21 +101,19 @@
 							<td></td>
 						</tr>
 			</tbody>
-	    				</table>
+	    </table>
 	   </div>
 	</div>
-	    			
-	   	  			
-	    	<div class="large-12 medium-6 cell"> 
-	    		<div class="large-8 small-4 cell"> 
-	    			 
-	    			
+	    		
+	    	<div class="large-12 medium-12 cell"> 
+	    		
 	    			<?php
 	    			$izraz = $veza->prepare("select * from lijek");
 							
 				    $izraz->execute();
 				    $lijekovi = $izraz->fetchAll(PDO::FETCH_OBJ);
 	    			?>
+	    			
 	    			<form method="post" action="<?php echo $putanjaAPP;?>privatno/posjeta/dodajLijek.php">
 	    				<input name="posjeta" value="<?php echo $sifra;?>" type="hidden"></input>
 	    			<label>Lijek :
@@ -134,10 +135,9 @@
 	    		<a href="<?php echo $putanjaAPP;?>privatno/posjeta/index.php">
 			  <button class="alert button expanded" name="povratak">Povratak</button>
 				</a>
-
-	    	
+      
 	    </div>
-	   </div> 
+	  
 	<?php	include_once '../../predlosci/podnozje.php'; ?>
    <?php	include_once '../../predlosci/skripte.php'; ?>
   </body>

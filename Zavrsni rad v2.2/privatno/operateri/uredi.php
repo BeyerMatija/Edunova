@@ -1,4 +1,5 @@
  <?php include_once '../../konfiguracija.php';  ?>
+ <?php include_once '../../funkcije.php'; provjeralogin(); ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -16,15 +17,24 @@
 							$operater = $izraz->fetch(PDO::FETCH_OBJ);
 							      
 							       ?>
+							       
+		<div class ="grid-x">
+  		<div class="medium-3 large-3 cell"></div>
+  		<div class="medium-6 large-6 cell">	
+  								       
 	    <form class="log-in-form" method="post" action="<?php echo $putanjaAPP;?>privatno/operateri/edit.php">
 			  	
-			  <h4 class="text-center">Uredi informacije o operateru</h4>
-			  <label>Korisničko ime
+			  <h4 class="text-center"><b>Uredi informacije o operateru</b></h4>
+			  <label>Korisničko ime:
 			    <input type="text" name="korisnicko_ime" placeholder="korisnik" value="<?php echo $operater->korisnicko_ime; ?>">
 			  </label>
 			  
 		       <input type="hidden" name="sifra"  value="<?php echo $operater->sifra; ?>">
 			  <p><input type="submit" class="button expanded" value="Uredi"></input></p>
+			  
+<a href="<?php echo $putanjaAPP;?>privatno/operateri/index.php"">
+			  <button class="alert button expanded" name="odustani">Odustani</button>
+				</a>
 		
 			</form>
 	<?php	include_once '../../predlosci/podnozje.php'; ?>

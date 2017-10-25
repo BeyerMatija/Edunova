@@ -9,19 +9,20 @@
   	       	
       <div class="row">
       	
-        <div class="large-8 cell">
+        <div class="large-12 cell">
         	<br>
         	         	
-        	<h4 style="width: 100; margin-left: 50px;">Osnovni podaci:</h4>        	       	
-        	<h6 style="width: 100; margin-left: 50px;">Vukovarska 110,<br>31000 Osijek,<br>
+        	<h4 style="width: 100; margin-left: 18px;"><b>Osnovni podaci:</b></h4>       	       	
+        	<h6 style="width: 100; margin-left: 18px;">Vukovarska 110,<br>31000 Osijek,<br>
         							OIB: 51944919663,
         							<br>IBAN PBZ: HR3723400091110022264</h6><br>
         							
         							
-        	<h4 style="width: 100; margin-left: 50px;">Kontakt telefoni:</h4>
-        	<h6 style="width: 100; margin-left: 50px;">Telefon (centrala):+385 (0) 31 200 099,<br>
+        	<h4 style="width: 100; margin-left: 18px;"><b>Kontakt telefoni:</b></h4>
+        	<h6 style="width: 100; margin-left: 18px;">Telefon (centrala):+385 (0) 31 200 099,<br>
         											   Telefax: +385 (0) 31 200 100,<br>
-        			       	     		  			   E-mail:beyermatija@gmail.com<br>		         	      	     	
+        			       	     		  			   E-mail:beyermatija@gmail.com<br>
+        			       	     		  			   	         	      	     	
         	</div>    	
       	</div> 
       	

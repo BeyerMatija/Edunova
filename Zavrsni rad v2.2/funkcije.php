@@ -1,4 +1,3 @@
-
 <?php
 function provjeralogin () {
 	
@@ -10,4 +9,12 @@ function provjeralogin () {
 		
 	}
 }
-	
+
+ /*function provjeraUloga (){
+	if( !(isset($_SESSION["user"]) && $_SESSION["neuspio"])) {
+		$a = "Location: " . $GLOBALS["putanjaAPP"] . "login.php?error=true";
+		
+		header($a);
+	}
+}	
+*/
